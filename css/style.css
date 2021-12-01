@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: aliceblue;
+    background: aquamarine;
+}
+
+.container {
+    background-image: url('../images/pexels-arvind-shakya-668282.jpg');
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.inner-container {
+    position: absolute;
+    height: 100%;
+    padding: 15rem;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-container h1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 5rem;
+}
+
+.countdown {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown div {
+    padding: 0.6rem;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 0.3rem;
+}
+
+@media (max-width: 568px) {
+    .inner-container h1 {
+        font-size: 3rem;
+    }
+
+    .countdown {
+        flex-direction: column;
+    }
+}
